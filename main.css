@@ -64,3 +64,10 @@ form button {
     margin-right: 195px;
     border: 2px solid #5c0c4e;
 }
+
+li {
+    cursor: pointer;
+    list-style: circle;
+}
+
+
