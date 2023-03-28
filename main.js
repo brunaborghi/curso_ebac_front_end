@@ -38,7 +38,9 @@ $('form').validate({
         nome: 'Por favor, insira o seu nome completo'
     },
     submitHandler: function(form) {
-        console.log(form)
+         alert('Enviado com sucesso!!!')
+
+            $('form input').val('');
     },
     invalidHandler: function(evento, validador) {
         let camposIncorretos = validador.numberOfInvalids();
