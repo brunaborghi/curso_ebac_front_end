@@ -1,21 +1,17 @@
-    
-        
-    const form = document.getElementById('form-EBAC');
-    let formEValido = true;
-   
-    formEValido = validaCampo(Number(campoA.value), Number(campoB.value)); 
-    
+const form = document.getElementById('form-ebac');
     const campoA = document.getElementById('campoA');
     const campoB = document.getElementById('campoB');
-    
+
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
-    if (formEValido == validaCampo) {
-        alert("Está ok");
+    document.getElementById("btn-enviar").addEventListener("click", function() {
+            if (campoB.value > campoA.value) {
+              alert("Formulário Válido");
+            } else {
+              alert("Formulário Inválido - O campo B deve ser maior que o campo A");
+            }
+          });
 
-    } else {
-        alert("O valor do campo A deve ser maior que o do campo B");
-    }
 
-});
+        });
