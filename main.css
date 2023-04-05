@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header { 
+    padding: 16px 0 ;
+    background-color: #401861;
+    color: #ecf0f1;
+}
+
+header nav li {
+    display: inline;
+    margin-left:16px;
+    font-size: 18px;
+}
+
+header nav li a { 
+    color: #ecf0f1;
+    text-decoration: none; 
+ }
+
+ header .container,
+ section .container { 
+     display: flex;
+     align-items: center;
+     justify-content: space-between; 
+ }
+
+ section .container { 
+    align-items: flex-start;
+
+}
+
+section {
+    padding: 24px 0;
+    color: #000;
+}
+
+section h2 {
+    border-bottom: 2px solid #401861;
+    margin-bottom: 32px;
+
+    
+}
+ section p {
+    margin-bottom: 16px;
+}
+
+.store-front {
+    margin-right: 16px;
+    height: 400px;
+   
+}
+
+.produtos h2 {
+    margin-bottom: 32px;
+}
+
+
+.lista-produtos  {
+
+    display: grid;
+    grid-template-columns: repeat(4,24.3%);
+    column-gap: 1%; /* espaçamento colunas */
+    row-gap: 5%; /* espaçamento linhas */
+
+
+}
+
+.lista-produtos img {
+    max-width: 100%;
+} 
+
+ .lista-produtos h3 {
+    margin: 16px 0;
+}  
+
+
+.price {
+        margin: 16px 0;
+    }
+
+
+button {
+
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #401861;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    
+} 
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    .store-front {
+        margin-bottom: 32px;
+        height: 100%;
+        max-width: 100%;
+    }
+    
+
+    section .container { 
+        display: block;
+
+    }
+
+    .lista-produtos {
+        
+        grid-template-columns: repeat(2,49.8%);
+    }
+
+}
+
+@media screen and (max-width: 640px) { 
+
+    .container {
+        max-width: 90%;
+        display: block;
+    }
+
+    section .container { 
+        display: block;
+    
+    }
+
+    .store-front {
+        margin-bottom: 32px;
+        max-width: 100%;
+    }
+
+
+    .lista-produtos {
+       
+        display: block;
+    }
+
+    button {
+
+    width: 100%;
+    margin: 10px 0;
+    
+}
+
+}
